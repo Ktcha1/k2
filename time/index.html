@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 2px blue solid;
+            transform: translate(-50%, -50%);
+        }
+        .main div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            
+        }
+        .dot{
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background-color: rgb(109, 223, 16);
+            transform: translate(-50%,-50%);
+        }
+        .hh{
+            width: 8px;
+            height: 80px;
+            background-color: #908;
+            transform-origin: 50% 0;
+            transform: translate(-50%) rotate(180deg);
+            animation: clock 43200s linear;
+        }
+        .mm{
+            width: 6px;
+            height: 100px;
+            background-color: aqua;
+            transform-origin: 50% 0;
+            transform: translate(-50%) rotate(180deg);
+            animation: clock 3600s linear;
+        }
+        .ss{
+            width: 4px;
+            height: 120px;
+            background-color: #847384;
+            transform-origin: 50% 0;
+            transform: translate(-50%) rotate(180deg);
+            animation: clock 6s linear infinite;
+        }
+        @keyframes clock {
+            0%{
+                transform: translate(-50%) rotate(180deg);
+            }
+            100%{
+                transform: translate(-50%) rotate(540deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="dot"></div>
+        <div class="hh"></div>
+        <div class="mm"></div>
+        <div class="ss"></div>
+    </div>
+</body>
+</html>
