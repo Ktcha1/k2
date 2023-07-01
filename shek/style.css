@@ -7,3 +7,12 @@
     display: flex;
     gap: 20px;
 }
+.bg{
+    background-color: brown;
+}
+
+a{
+   text-decoration: none;
+   color: white;
+
+}
