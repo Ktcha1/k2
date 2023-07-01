@@ -1,5 +1,5 @@
 .conteiner{
-    max-width: 700px;
+    padding: 0 100px 0 100px;
     margin: 0 auto;   
 }
 
@@ -9,10 +9,34 @@
 }
 .bg{
     background-color: brown;
+    padding: 0 100px 0 100px;
+    height: 30px;
+   
+    
+    ;
+}
+.navb{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
 }
 
 a{
    text-decoration: none;
    color: white;
-
 }
+.conteinera{
+    margin: 0 auto; 
+}
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.a1{
+    margin-right: 50px;
+}
+
+.txt{
+        max-width: 700px;
+    }
